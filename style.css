@@ -1,0 +1,242 @@
+*{
+    padding: 0px;
+    margin: auto;
+    box-sizing: border-box;    
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('GEA7s62XkAA_Zjd.jpg')no-repeat center center/cover;
+    backdrop-filter: blur(5px);
+    opacity: .40;
+}
+header{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    border: 4px solid black;
+    border-radius: 20px; 
+    z-index: 2;
+}
+header .main_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    border-radius: 20px;
+    z-index: -1;
+    filter: blur(3px);
+}
+header nav{
+    width: 90%;
+    height: 7.5%;
+    /*border: 1px solid white;*/
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .brand{
+    width: 20%;
+    height: 100%;
+    /*border: 1px solid whitesmoke;*/
+    color: white;
+    font-family: "system-ui";
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+header nav ul{
+    width: 60%;
+    height: 100%;
+    border: 1px solid whitesmoke;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+header nav ul li{
+    list-style-type: none;
+    padding: 3px 10px;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: "system-ui";
+    font-family: 15px;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+header nav ul li a:hover{
+    color: black;
+}
+header nav .search{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+header nav .search input{
+    width: 90%;
+    padding: 5px 0px 3px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+/* nav end */
+header section{
+    /*border: 1px solid black;*/
+    width: 95%;
+    height: 56%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+header section .content{
+    /*border: 1px solid black;*/
+    width: 400px;
+    height: 70%;
+}
+header section .content h1{
+    color: black;
+    font-family: 'system-ui';
+    font-size: 35px;
+    padding-left: 60px;
+}
+header section .content h1 span{
+    background-color: yellow;
+    padding: 0px 0px;
+}
+header section .content h3{
+    color: yellow;
+    font-family: "system-ui";
+}
+header section .content .rateing{
+    color: whitesmoke;
+    font-size: 14px;
+    margin-top: 15px;
+    color: gold;
+}
+header section .content .subtitle{
+    color: white;
+    margin-top: 3px;
+}
+header section .content .subtitle span{
+    padding: 0px 5px;
+}
+header section .content .btns{
+    margin-top: 5px;
+    display: flex;
+}
+header section .content .btns button{
+    background: whitesmoke;
+    border: none;
+    outline: none;
+    padding: 9px 14px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+header section .content .btns button:nth-child(2){
+    background: gainsboro;
+}
+header section .content .btns button:nth-child(2):hover{
+    background: darkcyan;
+}
+header section .content .btns button:hover{
+    background: cyan;
+}
+header section .content .btns button .bi{
+    color: black;
+    transition: all .3s ease-in-out;
+}
+header section .content .btns button:hover .bi{
+    color: white;
+}
+header section .content .btns button .bi-cloud-arrow-down-fill{
+    color: white;
+}
+header section .content .btns button:hover .bi-cloud-arrow-down-fill{
+    color: black;
+}
+header section .content p{
+    color: gold;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-top: 15px;
+}
+/*card start*/       
+header .cards{
+    /*border: 1px solid black;*/
+    width: 95%;
+    height: 36%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .cards .card{
+    position: relative;
+    width: 200px;
+    height: 275px;
+    /*border: 1px solid red;*/
+    margin: 0px 5px;
+    border-radius: 10px;
+}
+header .cards .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+header .cards .card .content{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    border-radius: 0px 0px 10px 10px;
+    /*background: red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 0;
+    z-index: 2;
+}
+header .cards .card .content::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 10px 10px;
+    background: rgb(25, 25, 25, 0.1);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+header .cards .card .content h4{
+    color: white;
+    font-size: 13px;
+}
+header .cards .card .content p{
+    color: white;
+    font-size: 13px;
+}
+header .cards a {
+    text-decoration: none;
+    color: inherit;
+}
+@media only screen and (max-width: 1190px){
+    header .cards{
+        overflow-x: auto;
+    }
+}
